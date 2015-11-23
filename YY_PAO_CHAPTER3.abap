@@ -467,7 +467,7 @@ REPORT yy_pao_chapter3_page49a.
 *&---------------------------------------------------------------------*
 REPORT yy_pao_chapter3_page49b.
 
-  " specifying defaults by filtering a defaults table
+  " specifying defaults by filtering a defaults hashed table
   METHOD constructor.
     DATA(lt_args) = VALUE #( BASE it_args
                              FOR arg IN
@@ -482,9 +482,9 @@ REPORT yy_pao_chapter3_page49b.
 
   METHOD defaults.
     rt_args = VALUE #( ( VALUE #( key  = |chainring|
-                                  dref = REF i( 20 ) ) )
+                                  dref = REF i( 40 ) ) )
                        ( VALUE #( key  = |cog|
-                                  dref = REF i( 11 ) ) ) ).
+                                  dref = REF i( 18 ) ) ) ).
   ENDMETHOD.
 
 *&---------------------------------------------------------------------*
